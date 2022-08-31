@@ -3,7 +3,7 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 2.5rem;
 
     @include m.breakpoint-up(large){
         grid-template-columns: repeat(3, 1fr);
