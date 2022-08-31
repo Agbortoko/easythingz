@@ -43,7 +43,10 @@
     }
 
     .copyright{
-        justify-self: end;
+
+        @include m.breakpoint-up(large){
+            justify-self: end;
+        }
     }
 
 }
