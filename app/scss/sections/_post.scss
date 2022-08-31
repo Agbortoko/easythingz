@@ -39,10 +39,18 @@
 
     &__text{
 
+        h3{
+            transition: all 250ms ease-in-out;
+            
+            &:hover{
+                color: v.$orange;
+            }
+        }
+
         p{
             line-height: 1.5;
             font-size: 1.2rem;
-            margin-bottom: 100px;
+            margin-bottom: 5rem;
         }
     }
 
