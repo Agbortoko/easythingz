@@ -20,6 +20,7 @@
         border-radius: 0.625rem;
         box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, 0.2);
         transition: all 350ms ease-in-out;
+        background-color: v.$white;
 
         &:hover{
             transform: scale(1.05);
@@ -35,7 +36,6 @@
     }
 
     &__text{
-        background-color: v.$white;
 
         p{
             line-height: 1.5;
