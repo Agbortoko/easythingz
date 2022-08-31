@@ -1,0 +1,43 @@
+@use '../variables' as v;
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: v.$darkGray;
+}
+
+h1, h2{
+    font-weight: 800;
+}
+
+h1{
+    font-size: v.$font-xl;
+    line-height: 1.1;
+    margin-bottom: 1.69rem;
+
+}
+
+h2 {
+    font-size: v.$font-lg;
+    margin-bottom: 1.75rem;
+}
+
+h3 {
+    font-size: v.$font-md;
+    margin-bottom: 1.75rem;
+    font-weight: 600;
+}
+
+p{
+    font-weight: 600;
+}
+

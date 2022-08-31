@@ -1,0 +1,53 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.header{
+    background: v.$brightdarkBlue;
+    padding: 1em;
+
+    &__content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        gap: 1rem;
+        justify-content: center;
+
+        @include m.breakpoint-up(large){
+            grid-template-columns: 1fr 3fr;
+        }
+    }
+
+    &__logo{
+        width: 12.5rem;
+        margin-inline: auto;
+        display: block;
+       
+        @include m.breakpoint-up(large){
+            margin: 0;
+        }
+    }
+
+    &__navigation{
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: v.$white;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 1em;
+            transition: all 350ms ease-in-out;
+
+            &:hover{
+                color: v.$orange;
+                transform: scale(1.1);
+            }
+        }
+
+        @include m.breakpoint-up(large){
+            justify-self: end;
+        }
+
+    }
+
+}
