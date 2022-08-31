@@ -5,6 +5,7 @@
     background-color: v.$veryLightGray;
 
     &__grid{
+        
         a{
             display: block;
             text-decoration: none;
@@ -38,11 +39,12 @@
 
         p{
             line-height: 1.5;
+            font-size: 1.2rem;
         }
     }
 
     &__cta{
-        margin-top: 2rem;
+        margin-top: 2.5rem;
         text-align: right;
         font-weight: 800;
     }
