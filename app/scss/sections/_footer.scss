@@ -1,0 +1,49 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+
+.footer{
+
+    background-color: v.$brightdarkBlue;
+    color: v.$white;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include m.breakpoint-up(large){
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            
+        }
+    }
+
+    &__grid-item{
+        text-align: center;
+
+        @include m.breakpoint-up(large){
+            text-align: left; 
+        }
+    }
+
+    &__navigation{
+        a{
+            display: inline-block;
+            padding: 1.5em 0;
+            text-decoration: none;
+            color: v.$white;
+            margin-inline: 1em;
+            transition: all 350ms ease-in-out;
+
+            &:hover{
+                transform: scale(1.1);
+                color: v.$orange;
+            }
+        }
+    }
+
+    .copyright{
+        justify-self: end;
+    }
+
+}

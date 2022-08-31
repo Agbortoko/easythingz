@@ -1,0 +1,28 @@
+@use '../variables' as v;
+
+
+.seemore{
+
+    &__content{
+        
+        display: flex;
+        justify-content: flex-end;
+    
+        a{
+            display: block;
+            text-decoration: none;
+            color: v.$darkGray;
+            font-size: v.$font-md;
+            transition: text-decoration 350ms ease-in-out;
+            font-weight: 600;
+    
+            &:hover{
+                color: v.$orange;
+                text-decoration: underline;
+            }
+    
+            
+        }
+    }
+
+}
