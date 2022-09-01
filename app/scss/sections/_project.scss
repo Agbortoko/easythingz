@@ -1,23 +1,98 @@
+@use '../variables' as v;
 @use '../mixins' as m;
 
 .project{
 
+    
+    &__grid{
+
+        a{
+            display: block;
+            text-decoration: none;
+            color: v.$darkGray;
+        }
+        
+    }
+
     &__grid-item{
+        position: relative;
         width: 100% ;
+        min-height: 100%;
         overflow: hidden;
         border-radius: 1.25rem;
+        box-shadow: 0rem 1rem 1rem hsla(0, 0%, 0%, 0.2);
+        background-color: v.$white;
         transition: all 350ms ease-in-out;
 
         &:hover{
             transform: scale(1.05);
+
+            h3{
+                color: v.$orange;
+            }
+
+            .project__image{
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-size: 30%;
+                    background-color: hsla(0, 0%, 100%, 0.1);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+               
+            }
+
         }
 
         img{
             max-width: 100%;
+            vertical-align: middle;
             object-fit: cover;
         }
 
     }
 
 
+    &__image{
+        width: 100%;
+        height: 12.625rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: all 350ms ease-in-out;
+    }
+
+
+        &__text{
+
+            h3{
+                transition: all 350ms ease-in-out;
+            }
+
+            p{
+                line-height: 1.5;
+                font-size: 1.2rem;
+                margin-bottom: 5rem;
+            }
+        }
+
+        &__cta{
+            text-align: right;
+            font-weight: 800;
+            position: absolute;
+            bottom: 8%;
+            right: 8%;
+        }
+
+
+
+
 }
+
+
