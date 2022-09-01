@@ -16,6 +16,14 @@
         }
     }
 
+    &__meta{
+        border-bottom: 0.125rem solid rgba(0,0,0,.5);
+        padding: 0.75rem 0;
+        text-transform: uppercase;
+        color: rgba(0,0,0,.8);
+        margin-bottom: 2.5rem;
+    }
+
 
     &__info{
 
