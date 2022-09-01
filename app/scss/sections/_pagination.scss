@@ -1,0 +1,32 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content{
+
+        a{
+            display: inline-block;
+            color: v.$darkGray;
+            font-size: v.$font-md;
+            text-decoration: none;
+            margin-inline: 1rem;
+            transition: all 250ms ease-in-out;
+
+            &:hover{
+               color: v.$orange;
+               transform: scale(1.1);
+            }
+            
+            &.active{
+                background-color: v.$darkBlue;
+                color: v.$white;
+                padding: 0.6rem 1rem;
+            }
+        }
+    }
+
+}

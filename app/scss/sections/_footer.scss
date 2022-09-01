@@ -24,12 +24,13 @@
         @include m.breakpoint-up(large){
             text-align: left; 
         }
+
+        
     }
 
     &__navigation{
         a{
             display: inline-block;
-            padding: 1.5em 0;
             text-decoration: none;
             color: v.$white;
             margin-inline: 1em;
@@ -42,10 +43,10 @@
         }
     }
 
-    .copyright{
+    &__copyright{
 
         @include m.breakpoint-up(large){
-            justify-self: end;
+           text-align: right;
         }
     }
 

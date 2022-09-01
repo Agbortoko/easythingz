@@ -1,3 +1,17 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+  .mt-1 {
+    margin-top: 2rem;
+  }
+
+  .mt-sm-1{
+    margin-top: 2rem;
+
+    @include m.breakpoint-up(large){
+      margin-top: 0;
+     }
+  }
 
   .mt-2 {
     margin-top: 4rem;
