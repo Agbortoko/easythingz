@@ -1,0 +1,78 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.sidebar{
+
+        p{
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        &__widget{
+            padding-bottom: 2.5rem;
+            margin-bottom: 3rem;
+            border-bottom: 4px solid v.$darkGray;
+        }
+
+
+        .newsletter{
+
+            input{
+                width: calc(100% - 1.25rem);
+                display: block;
+                margin-inline: auto;
+                padding: 0.8em;
+                color: v.$darkGray;
+            }
+
+
+            a{
+                color: v.$darkBlue;
+                transition: all 250ms ease-in-out;
+
+                &:hover{
+                    color: v.$orange;
+                }
+            }
+
+            button{
+                width: calc(100% - 1.25rem);
+                display: block;
+                border: none;
+                border-radius: 5px;
+                background-color: v.$orange;
+                color: v.$white;
+                margin-inline: auto;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                padding: 1em;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+
+
+        .project__grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .social{
+
+            a{
+                text-decoration: none;
+                color: v.$darkGray;
+                margin-inline-end: 0.5rem;
+                transition: all 250ms ease-in-out;
+
+                &:hover{
+                    color: v.$orange;
+                }
+            }
+        }
+
+    }
