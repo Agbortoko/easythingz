@@ -26,6 +26,12 @@
 
         &:hover{
             transform: scale(1.05);
+
+            
+            h3{
+                color: v.$orange;
+            }
+
         }
     }
 
@@ -52,10 +58,6 @@
             }
 
             &:hover{
-
-                h3{
-                    color: v.$orange;
-                }
 
                 &::after{
                     content: "";
