@@ -36,6 +36,17 @@
 
     &__image{
         margin-bottom: 3rem;
+        overflow: hidden;
+
+        figure{
+
+            img{
+                transition: all 350ms ease-in-out;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
     }
 
     &__sidebar{
