@@ -2,6 +2,7 @@
 @use '../mixins' as m;
 
 .hero{
+    position: relative;
     background: v.$brightdarkBlue;
     color: v.$white;
     &__content{
@@ -15,4 +16,15 @@
             padding: 3rem;
         }
     }
+
+    svg{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 6rem;
+        transform: translateY(98%);
+    }
 }
+

@@ -40,6 +40,27 @@ h3 {
 p{
     font-weight: 500;
     font-size: 1.15rem;
+    line-height: 1.7;
     margin-bottom: 2rem;
 }
+
+strong{
+    font-weight: 600;
+}
+
+ul, ol, blockquote{
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+blockquote, ol li, p, ul li{
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
+ol li, ul li {
+    margin-left: 3.5rem;
+}
+
+
 
