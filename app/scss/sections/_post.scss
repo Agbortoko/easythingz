@@ -26,6 +26,27 @@
 
         &:hover{
             transform: scale(1.05);
+
+            h3{
+                color: v.$orange;
+            }
+
+            .post__image{
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background-size: 30%;
+                    background-color: hsla(0, 0%, 100%, 0.1);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+               
+            }
         }
     }
 
@@ -35,16 +56,13 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        transition: all 350ms ease-in-out;
     }
 
     &__text{
 
         h3{
-            transition: all 250ms ease-in-out;
-            
-            &:hover{
-                color: v.$orange;
-            }
+            transition: all 350ms ease-in-out;
         }
 
         p{
