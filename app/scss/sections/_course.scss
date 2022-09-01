@@ -53,6 +53,10 @@
 
             &:hover{
 
+                h3{
+                    color: v.$orange;
+                }
+
                 &::after{
                     content: "";
                     position: absolute;
@@ -76,10 +80,7 @@
 
         h3{
             transition: all 250ms ease-in-out;
-            
-            &:hover{
-                color: v.$orange;
-            }
+            margin-bottom: 3rem;
         }
 
         p{
@@ -93,7 +94,7 @@
         text-align: right;
         font-weight: 800;
         position: absolute;
-        bottom: -20%;
+        bottom: -16%;
         right: 8%;
     }
 
