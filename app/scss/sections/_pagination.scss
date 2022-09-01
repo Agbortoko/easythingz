@@ -13,7 +13,7 @@
             color: v.$darkGray;
             font-size: v.$font-md;
             text-decoration: none;
-            margin-inline: 1rem;
+            margin-inline: 0.8rem;
             transition: all 250ms ease-in-out;
 
             &:hover{
@@ -26,6 +26,14 @@
                 color: v.$white;
                 padding: 0.6rem 1rem;
             }
+        }
+    }
+
+    &__numbers{
+        display: inline-block;
+
+        @include m.breakpoint-down(small){
+            display: none;
         }
     }
 
