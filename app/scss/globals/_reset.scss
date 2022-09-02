@@ -13,6 +13,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: v.$darkGray;
+
+    &.hide-scroll{
+        overflow-y: hidden;
+    }
 }
 
 h1, h2{
@@ -69,5 +73,9 @@ img{
     margin: 0;
 }
 
+button{
+    border: none;
+    cursor: pointer;
+}
 
 

@@ -28,11 +28,12 @@
             flex-direction: column;
         }
 
-        a{
+        a, button{
             transition: all 350ms ease-in-out;
         }
 
-        a:hover{
+        a:hover, 
+        button:hover{
             transform: scale(1.08);
             opacity: 0.9;
         }
@@ -67,6 +68,16 @@
         justify-content: center;
         align-items: center;
         border-radius: 1.875rem;
+
+        &--darkgreen{
+            background-color: v.$mtnDarkGreen;
+            color: v.$white;
+        }
+
+        &--yellow{
+            background-color: v.$mtnYellow;
+            color: v.$darkGray
+        }
 
         svg{
             width: 1.25rem;

@@ -1,0 +1,63 @@
+@use '../variables' as v;
+@use '../mixins' as m;
+
+.modal{
+
+
+    &__overlay{
+        position: fixed;
+        inset: 0 0 0 0;
+        z-index: 999999;
+        background-color: v.$darkGray; // FallBack
+        background-color: v.$darkOpacity;
+    }
+
+    &__image{
+        width: 3.125rem;
+        aspect-ratio: 1;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+
+    &__content{
+        position: relative;
+        margin: 15% auto;
+        width: 18.75rem;
+        background-color: v.$white;
+        padding: 1rem;
+        color: v.$darkGray;
+       
+
+        @include  m.breakpoint-down(small){
+           margin-inline: auto;
+        }
+        
+        p{
+            font-size: 1.5rem;
+        }
+
+    }
+
+    &__close{
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+
+        &:hover{
+            transform: scale(0.75);
+        }
+    }
+
+    &__form{
+        input{
+            padding: 0.8rem;
+            display: block;
+            margin-inline: auto;
+        }
+    }
+
+
+}
