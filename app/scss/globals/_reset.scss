@@ -15,6 +15,7 @@ body{
     color: v.$darkGray;
 
     &.hide-scroll{
+        transition: overflow-y 150ms ease-in-out;
         overflow-y: hidden;
     }
 }
