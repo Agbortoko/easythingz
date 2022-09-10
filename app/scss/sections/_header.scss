@@ -30,24 +30,36 @@
     &__navigation{
         text-align: center;
 
-        a{
-            text-decoration: none;
-            color: v.$white;
-            display: inline-block;
-            text-transform: uppercase;
-            padding: 1em;
-            transition: all 350ms ease-in-out;
-
-            &:hover{
-                color: v.$orange;
-                transform: scale(1.1);
-            }
-        }
-
         @include m.breakpoint-up(large){
             justify-self: end;
         }
-
+    }
+    
+    &__menu{
+        list-style-type: none;
     }
 
+    &__menu-item{
+        margin: 0;
+        display: inline-block;
+        list-style-type: none;  
+    }
+
+
+    &__menu-link{
+        text-decoration: none;
+        color: v.$white;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 1em;
+        transition: all 350ms ease-in-out;
+
+        &:hover{
+            color: v.$orange;
+            transform: scale(1.1);
+        }
+    }
+
+
+       
 }
