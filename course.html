@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/style.min.css">
 
 </head>
 <body>
@@ -25,16 +25,19 @@
             </a>
     
             <nav class="header__navigation">
-                <a href="blog.html">Blog</a>
-                <a href="course.html">Courses</a>
-                <a href="about.html">About</a>
+                <ul class="header__menu">
+                    <li class="header__menu-item"> <a class="header__menu-link" href="blog.html">Blog</a></li>
+                    <li class="header__menu-item"> <a class="header__menu-link" href="course.html">Courses</a></li>
+                    <li class="header__menu-item"> <a class="header__menu-link" href="about.html">About</a></li>
+                </ul>
+              
+               
             </nav>
 
         </div>
 
 
     </header>
-
 
 
     <section class="search p-1 mt-2">
@@ -198,10 +201,14 @@
 
                 <div class="footer__grid-item">
                    <nav class="footer__navigation">
-                        <a href="index.html">Home</a>
-                        <a href="#">Terms</a>
-                        <a href="#">Privacy</a>
-                        <a href="#">Disclaimer</a>
+    
+                    <ul class="footer__menu">
+                        <li class="footer__menu-item"> <a class="footer__menu-link" href="blog.html">Home</a></li>
+                        <li class="footer__menu-item"> <a class="footer__menu-link" href="course.html">Terms</a></li>
+                        <li class="footer__menu-item"> <a class="footer__menu-link" href="about.html">Privacy</a></li>
+                        <li class="footer__menu-item"> <a class="footer__menu-link" href="about.html">Disclaimer</a></li>
+                    </ul>
+
                    </nav>
                 </div>
                 <div class="footer__grid-item mt-sm-1">
@@ -217,6 +224,7 @@
         </div>
 
     </footer>
+
 
 
     
