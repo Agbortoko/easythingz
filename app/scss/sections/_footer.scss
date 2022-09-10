@@ -29,17 +29,33 @@
     }
 
     &__navigation{
-        a{
-            display: inline-block;
-            text-decoration: none;
-            color: v.$white;
-            margin-inline: 0.4rem;
-            transition: all 350ms ease-in-out;
+        
+    }
 
-            &:hover{
-                transform: scale(1.1);
-                color: v.$orange;
-            }
+
+    &__menu{
+        margin: 0;
+        list-style-type: none;
+    }
+
+    &__menu-item{
+        margin: 0;
+        display: inline-block;
+        list-style-type: none;  
+    }
+
+    &__menu-link{
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+        color: v.$white;
+        margin-inline: 0.4rem;
+        transition: all 350ms ease-in-out;
+
+        &:hover{
+            transform: scale(1.1);
+            color: v.$orange;
         }
     }
 
