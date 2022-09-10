@@ -27,6 +27,20 @@
         }
     }
 
+
+    // For WordPress
+    .custom-logo-link{
+        display: block;
+        width: 12.5rem;
+        margin-inline: auto;
+        
+        
+        @include m.breakpoint-up(large){
+            margin: 0;
+        }
+    }
+
+
     &__navigation{
         text-align: center;
 
