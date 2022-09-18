@@ -37,4 +37,17 @@
         }
     }
 
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &--start{
+            justify-self: start;
+        }
+
+        &--end{
+            justify-self:end;
+        }
+    }
+
 }
